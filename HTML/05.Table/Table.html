@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+        <!-- <table border="1px" cellspacing="10px" cellpadding="5px">  -->
+        <table>    
+            <caption><u>Student Data</u></caption>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Percentage</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td rowspan="2">65%</td>
+                    <td rowspan="2">Second class</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <!-- <td>80%</td> -->
+                    <!-- <td>Distinction</td> -->
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td>33%</td>
+                    <td>Pass</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">total:3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+</html>
