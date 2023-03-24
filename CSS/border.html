@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: auto;
+            background: powderblue;
+            margin: 10px;
+            /* border: 10px solid; */
+            border-width: 10px;
+            border-color: darkblue;
+        }
+        .a1{
+            border-radius: 10px 20px 30px 40px;
+            border-style: dashed;
+        }
+        .a2{
+            border-style: double;
+            border-top: 5px double;
+        }
+        .a3{
+            border-color: palevioletred;
+            border-style: groove;
+            border-bottom-width: 15px;
+        }
+        .a4{
+            border-color: palevioletred;
+            border-style: ridge;
+            border-right-color: seagreen;
+        }
+        .a5{
+            border-color: palevioletred;
+            border-style: inset; 
+        }
+        .a6{
+            border-color: palevioletred;
+            border-style: outset; 
+        }
+        .a7{
+            border-style: dotted;   
+        }
+        .a8{
+            border-style: none;
+        }
+        .a9{
+            border-style: hidden;  
+            transition: border-style 3s, background-color 2s;
+        }
+        .a9:hover{
+            border-style: solid;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="a3"></div>
+    <div class="a4"></div>
+    <div class="a5"></div>
+    <div class="a6"></div>
+    <div class="a7"></div>
+    <div class="a8"></div>
+    <div class="a9"></div>
+</body>
+</html>
