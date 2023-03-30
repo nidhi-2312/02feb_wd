@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container{
+            height: 500px;
+            width: auto;
+            border: 1px solid black;
+        }
+        .item{
+            height: 120px;
+            width: 120px;
+            background: #000;
+            border: 1px solid #00ffff;
+            color: #fff;
+            /* float: left; */
+        }
+        .item-1{
+            width: 100%;
+            /* float: left; */
+        }
+        .item-2{
+            float: left;
+        }
+        .item-3{
+            float: left;
+        }
+        .item-4{
+            /* float: right; */
+            clear: left;
+        }
+        .item-5{
+            /* clear: left; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+</html>
