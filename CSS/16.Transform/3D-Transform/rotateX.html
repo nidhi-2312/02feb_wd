@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotateX</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 20px auto;
+            background: powderblue;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .parent{
+            background: transparent;
+            position: relative;
+        }
+        .child{
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5SHjnORTC7vPVQi3JcLQrnP12jdsdkhhEqA&usqp=CAU);
+            /* transform: rotateX(180deg); */
+            margin: 0;
+            background-size: 100% 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        .rotateX{
+            /* background: powderblue; */
+            transform: rotateZ(180deg);
+        }
+        .rotate{
+            /* background: lightcoral; */
+            transform: rotateZ(0deg);
+        }
+        .parent:hover .rotate{
+            transform: rotateZ(180deg);
+        }
+        .parent:hover .rotateX{
+            transform: rotateZ(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="original">original</div>
+    <!-- <div class="child rotateX">rotateX</div> -->
+
+    <div class="parent">
+        <div class="child rotateX">rotateX</div>
+        <div class="child rotate">rotate</div>
+    </div>
+</body>
+</html>
