@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RotateX</title>
+    <title>RotateY</title>
     <style>
         div{
             height: 200px;
@@ -28,17 +28,17 @@
         }
         .rotateX{
             /* background: powderblue; */
-            transform: rotateX(180deg);
+            transform: rotateY(180deg);
         }
         .rotate{
             /* background: lightcoral; */
-            transform: rotateX(0deg);
+            transform: rotateY(0deg);
         }
         .parent:hover .rotate{
-            transform: rotateX(180deg);
+            transform: RotateY(180deg);
         }
         .parent:hover .rotateX{
-            transform: rotateX(0deg);
+            transform: RotateY(0deg);
         }
     </style>
 </head>
@@ -47,7 +47,7 @@
     <!-- <div class="child rotateX">rotateX</div> -->
 
     <div class="parent">
-        <div class="child rotateX">rotateX</div>
+        <div class="child rotateY">rotateY</div>
         <div class="child rotate">rotate</div>
     </div>
 </body>
