@@ -1,0 +1,31 @@
+@media (max-width: 500px)
+{
+    .fa{display: block; position: relative;}
+    ul li{display: none;
+    position: absolute;}
+    .fa:hover + ul li{  
+        position: fixed;
+        display: block;
+    }
+    div{
+        background: blue;
+    }
+}
+@media (min-width: 500px) and (max-width: 700px)
+{
+    .fa{display: block;}
+    .fa:hover + ul li{
+        display: block;
+    }
+    ul li{display: none;}
+
+    div{background: lightseagreen;}
+}
+@media (min-width: 700px) and (max-width: 900px)
+{
+    div{background: lightsalmon;}
+}
+@media (min-width: 1300px)
+{
+    div{background: darkred};
+}
