@@ -1,0 +1,23 @@
+-  We can embed(apply) the javascript using 3 way
+
+1.In Head tag:-
+<head>
+    <script src="">
+        // javascript code
+    </script>
+</head>
+-------------------------
+
+2.Body tag:-
+<body>
+    //body of the html
+
+    <script src="">
+        // javascript code
+    </script>
+</body>
+--------------------------------------
+
+3.External file:-
+
+<script src="min.js"></script>
