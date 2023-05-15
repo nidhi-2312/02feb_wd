@@ -1,0 +1,40 @@
+Variable is use to store a value
+
+Variable is like container to store something inside
+
+In javascript you don't need to define datatype of the variable
+
+In javascript you can define the variable in three way, which are given below
+--------------------------------------------------------------------------------
+    1.var:-
+        -> Using var keyword you can define variable
+            var a = 45; 
+
+        also redefine 
+            var a = 5;
+
+        also change the value
+            a = 100;
+    -----------------------------------------------------------------
+
+    2.Let:-
+        -> Using let keyword you can also define the variable
+            let a = 10;
+
+        can't redefine the variable
+            //let a = 9;
+
+        can change the value
+            a = 9;
+    -----------------------------------------------------------------
+
+    3.Const:-
+        -> Using Const keyword you can define the variable
+            const a = 5;
+
+        can't redefine the variable
+            const a = 10;
+            
+        can't change the value
+            a = 9;
+    -----------------------------------------------------------------

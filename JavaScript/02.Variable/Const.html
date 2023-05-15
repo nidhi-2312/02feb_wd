@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+</head>
+<body>
+    <h1>This is const variable</h1>
+    <p id="para"></p>
+    <script>
+        let p = document.getElementById('para');
+
+        // Declaration of the variable
+        const nm = "Nidhi"
+        p.innerHTML = nm;
+
+        // Redeclaration of the variable
+        // const nm = "Nadiyapara" //Redeclaration of the variable is not allowed
+        // p.innerHTML = nm;
+
+        // Change the value(reinitialize of the nm)
+        // nm = 'ninja'; //Can't reinitialize 
+        p.innerHTML = nm;
+    </script>
+</body>
+</html>
