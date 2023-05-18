@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:  2px solid blue;
+            border-radius: 15px;
+            margin: 0px 15px;
+            padding: 0 130px;
+        }
+        div{
+            margin: 20px auto;
+        }
+        input[id="sub"]
+        {
+            width: 150px;
+        }
+        :focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="val1">
+            <input type="text" name="value 1" id="val1" placeholder="Enter the 1st value">
+        </div>
+        <div class="val2">
+            <input type="text" name="value 2" id="val2" placeholder="Enter the 2nd value">
+        </div>
+        <div class="ans">
+            <input type="text" name="answer" id="ans" placeholder="Your answer is.......">
+        </div>
+        <div class="val2">
+            <input type="submit" name="submit" id="sub" value="Addition">
+        </div>
+    </form>
+    <script>
+        const val1 = document.getElementById('val1');
+        const val2 = document.getElementById('val2');
+        const ans = document.getElementById('ans');
+    </script>
+</body>
+</html>
