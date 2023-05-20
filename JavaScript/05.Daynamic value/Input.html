@@ -25,7 +25,6 @@
     </style>
 </head>
 <body>
-    <form action="" method="post">
         <div class="val1">
             <input type="text" name="value 1" id="val1" placeholder="Enter the 1st value">
         </div>
@@ -35,14 +34,65 @@
         <div class="ans">
             <input type="text" name="answer" id="ans" placeholder="Your answer is.......">
         </div>
-        <div class="val2">
-            <input type="submit" name="submit" id="sub" value="Addition">
+        <div class="add">
+            <button onclick="add()">Addition</button>
+        <!-- </div>
+        <div class="sub"> -->
+            <button onclick="sub()">Subtraction</button>
+        <!-- </div>
+        <div class="mul"> -->
+            <button onclick="mul()">Multiplication</button>
+        <!-- </div>
+        <div class="div"> -->
+            <button onclick="div()">Division</button>
+        <!-- </div>
+        <div class="mod"> -->
+            <button onclick="mod()">Modulo</button>
+        <!-- </div>
+        <div class="mod">  -->
+            <button onclick="inc()">Increment</button>
+        <!-- </div>
+        <div class="mod">  -->
+            <button onclick="dec()">Decrement</button>
         </div>
-    </form>
     <script>
-        const val1 = document.getElementById('val1');
-        const val2 = document.getElementById('val2');
-        const ans = document.getElementById('ans');
+        let val1 = parseInt(document.getElementById('val1').value);
+        let val2 = parseInt(document.getElementById('val2').value);
+        let ans = document.getElementById('ans');
+
+        function add()
+        {
+           ans.value =  val1 + val2;
+        }
+        function sub()
+        {
+           ans.value =  val1 - val2;
+        }
+        function mul()
+        {
+           ans.value =  val1 * val2;
+        }
+        function div()
+        {
+           ans.value =  val1 / val2;
+        }
+        function mod()
+        {
+           ans.value =  val1 % val2;
+        }
+        function inc()
+        {
+           ++val1;
+           ans.value = val1;
+
+        }
+        function dec()
+        {
+            --val2;
+           ans.value =  val2;
+        }
+        // add();
+        // inc()
     </script>
 </body>
 </html>
