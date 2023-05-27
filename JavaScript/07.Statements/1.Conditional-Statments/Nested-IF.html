@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested-If</title>
+</head>
+<body>
+    <h1>Nested if use to apply the condition inside the other condition.</h1>
+    <script>
+        let a=50, b=7, c=90;
+        if(a>b){
+            if(a>c){
+                console.log("a is greater than b and c");
+            }
+            else{
+                console.log("c is greater than a and b");
+            }
+        }
+        else{
+           if(b > c) 
+           {
+                console.log("b is greater than a and c");
+           }
+           else{
+                console.log("c is greater than b");
+           }
+        }
+        
+    </script>
+</body>
+</html>
