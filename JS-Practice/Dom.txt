@@ -1,0 +1,7 @@
+DOM Selectors, as the name suggests is used to select HTML elements within a document using JavaScript. There are 5 ways in which you can select elements in a DOM using selectors.
+
+getElementsByTagName()
+getElementsByClassName()
+getElementById()
+querySelector()
+querySelectorAll()
