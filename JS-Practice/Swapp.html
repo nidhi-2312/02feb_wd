@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping</title>
+
+</head>
+<body>
+    <p id="para"></p>
+    <!-- <button class="but" id="but" onclick="add()">+</button>
+    <button class="but" id="but" onclick="sub()">-</button>
+    <button class="but" id="but" onclick="mul()">*</button>
+    <button class="but" id="but" onclick="div()">/</button>
+    <button class="but" id="but" onclick="mod()">%</button>
+    <button class="but" id="but" onclick="pow()">**</button>
+    <button class="but" id="but" onclick="inc()">++</button>
+    <button class="but" id="but" onclick="desc()">--</button> -->
+    <button>Swapping</button>
+    <script>
+        let a = 5; //Static value
+        let b = parseInt(prompt("Enter the value of b:")); //Dynamic value
+        console.log(typeof(b));
+        // let but = document.getElementsByTagName('button')
+        // let but = document.getElementsByClassName('but');
+        // let but = document.getElementById("but");
+        let p = document.getElementById("para");
+        // console.log(window);
+        // document.addEventListener('click',()=>{
+        //     a
+        // })
+
+       /* function add(){
+            // document.write(a + b);
+            p.innerHTML = a+b;
+        };
+        function sub(){
+            // document.write(a + b);
+            p.innerHTML = a-b;
+        };
+        function mul(){
+            // document.write(a + b);
+            p.innerHTML = a*b;
+        };
+        function div(){
+            // document.write(a + b);
+            p.innerHTML = a/b;
+        };
+        function mod(){
+            // document.write(a + b);
+            p.innerHTML = a%b;
+        };
+        function pow(){
+            // document.write(a + b);
+            p.innerHTML = a**b;
+        };
+        function inc(){
+            // document.write(a + b);
+            p.innerHTML = ++a;
+        };
+        function desc(){
+            // document.write(a + b);
+            p.innerHTML = --b;
+        };*/
+        function swap()        
+        {
+            let c;
+            c = a;
+            a = b;
+            b = c;
+            document.write(a + "," + b);
+        }
+        swap();
+    </script>
+</body>
+</html>

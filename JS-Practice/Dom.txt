@@ -2,6 +2,7 @@ DOM Selectors, as the name suggests is used to select HTML elements within a doc
 
 getElementsByTagName()
 getElementsByClassName()
+getElementsByName()
 getElementById()
 querySelector()
 querySelectorAll()
