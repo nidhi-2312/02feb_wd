@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        .a{
+            color: navy;
+            background: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi!</p>
+
+
+    <script>
+        var i = 0;
+        while(i < 4)
+        {
+            
+            var select = document.querySelectorAll("p")[i].addEventListener('click', (x)=>{
+                // x.target.style.background = 'red';
+                // x.target.style.color = 'white';
+                x.target.classList.add('a');
+            });
+            i++;
+        }
+    </script>
+</body>
+</html>

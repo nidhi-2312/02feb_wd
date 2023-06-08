@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        function add(a, b)
+        {
+            return a + b;
+        }
+        function sub(a, b)
+        {
+            return a - b;
+        }
+        function mul(a, b)
+        {
+            return a * b;
+        }
+        function div(a, b)
+        {
+            return a / b;
+        }
+        var ch;
+        ch = parseInt(prompt("Enter your choice"));
+        switch(ch){
+            case 1:
+                document.write(add(5,6));
+                break;
+             case 2:
+                document.write(sub(5,6));
+                break;
+            case 3:
+                document.write(mul(5,6));
+                break;
+            case 4:
+                document.write(div(5,6));
+                break;
+            default:
+                document.write("Enter valid choice.....");
+                break;
+        }
+    </script>
+</body>
+</html>
